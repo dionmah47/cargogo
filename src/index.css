@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 transition-colors duration-300;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .container-max {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-base {
+    @apply inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200;
+  }
+
+  .card-base {
+    @apply rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 transition-all duration-300;
+  }
+}
